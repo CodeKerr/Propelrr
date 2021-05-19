@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class fibo1 {
+
+	public static void main(String[] args) {
+
+		int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter No.");
+		n = sc.nextInt();	
+		sc.close();
+
+	int count = 1;
+	int a=0, b=1;
+	int sum = a+b;
+
+	System.out.print(a+ "," + b);
+	
+	while (count <=n) {
+		System.out.print(","+sum);
+		a = b;
+		b = sum;
+		sum = a+b;
+		count++;
+	}
+	
+	
+	}
+	}
